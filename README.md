@@ -14,10 +14,12 @@ Spots is a new social media platform desgined for Photographers and Tourists. It
 
 ## Images
 
-![App Screenshot] (/images/screenshot.jpg)
+![App Screenshot](/images/screenshot.jpg)
 
 ## Deployment 
 
-[Github pages live] (https://davya0801.github.io/se_project_spots/)
+[Github pages live](https://davya0801.github.io/se_project_spots/)
 
 ## Video Presentation 
+ 
+ Check out my [Pitch Video](https://drive.google.com/file/d/1NjXPYkczB6KH4Xhh7PImcfrKlahrK-1Q/view?usp=sharing) this is my first screencast presentation. Very excited to keep learning on my road to profesionalism!
