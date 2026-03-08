@@ -13,10 +13,11 @@
 <body>
   <div class="page">
     <header class="header">
-      <img src="./images/logo.svg" alt="Spots Logo" class="header__logo"> </header>
+      <img src="./images/logo.svg" alt="Spots Logo" class="header__logo">
+    </header>
     <main class="content">
       <section class="profile page__section">
-        <img src="./images/avatar.jpg" alt="Avatar" class="profile__avatar"/>
+        <img src="./images/avatar.jpg" alt="Bessie Coleman" class="profile__avatar"/>
         <div class="profile__column">
           <h1 class="profile__name">Bessie Coleman</h1>
           <p class="profile__bio">Civil Aviator</p>
@@ -66,7 +67,7 @@
           </div>
         </li>
         <li class="card">
-          <img src="./images//6-photo-by-moritz-feldmann-from-pexels.jpg" alt="house" class="card__image">
+          <img src="./images/6-photo-by-moritz-feldmann-from-pexels.jpg" alt="house" class="card__image">
           <div class="card__content">
             <h2 class="card__title">Moutain house
             </h2>
@@ -79,6 +80,40 @@
     <footer class="footer">
       <div><p class="footer__description">2024 © Spots</p> </div>
     </footer>
+    <div class="modal modal__is-opened">
+      <div class="modal__container">
+          <button type="button" class="modal__close-btn">
+            <img src="./images/close.svg" alt="X">
+          </button>
+          <h2 class="modal__title">Edit profile</h2>
+          <form class="modal__form">
+            <label for="profile-name-input" class="modal__label">Name
+              <input id="profile-name-input" type="text" class="modal__input" placeholder="Type your name"/>
+            </label>
+              <label for="profile-description-input" class="modal__label">Description
+              <input id="profile-description-input" type="text" class="modal__input" placeholder="Describe yourself"/>
+              </label>
+              <button type="submit" class="modal__save-btn">Save</button>
+          </form>
+        </div>
+    </div>
+    <div class="modal modal__is-opened">
+      <div class="modal__container">
+          <button type="button" class="modal__close-btn">
+            <img src="./images/close.svg" alt="X">
+          </button>
+          <h2 class="modal__title">New Post</h2>
+          <form class="modal__form">
+            <label for="image-link-input" class="modal__label">Image link
+              <input id="image-link-input" type="url" class="modal__input" placeholder="Paste a link to the picture"/>
+            </label>
+              <label for="profile-caption-input" class="modal__label">Caption
+              <input id="profile-caption-input" type="text" class="modal__input" placeholder="Type your caption"/>
+              </label>
+              <button type="submit" class="modal__save-btn">Save</button>
+          </form>
+        </div>
+    </div>
   </div>
 </body>
 </html>
