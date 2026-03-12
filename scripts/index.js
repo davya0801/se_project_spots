@@ -15,31 +15,39 @@ const cardNameInput = newPostModal.querySelector("#profile-caption-input");
 const profileNameEl = document.querySelector(".profile__name");
 const profileBioEl = document.querySelector(".profile__bio");
 
+function openModal(modal){
+  modal.classList.add("modal__is-opened");
+}
 
+function closeModal(modal){
+  modal.classList.remove("modal__is-opened");
+}
 
 editProfileBtn.addEventListener("click", function (){
-  editProfileModal.classList.add("modal__is-opened");
+  openModal(editProfileModal);
   editProfileNameInput.value = profileNameEl.textContent;
   editProfileDescriptionInput.value = profileBioEl.textContent;
 });
 
+
+
 editProfileCloseBtn.addEventListener("click", function(){
-  editProfileModal.classList.remove("modal__is-opened");
+  closeModal(editProfileModal);
 });
 
 newPostBtn.addEventListener("click", function(){
-  newPostModal.classList.add("modal__is-opened");
+ openModal(newPostModal);
 });
 
 newPostCloseBtn.addEventListener("click", function(){
-  newPostModal.classList.remove("modal__is-opened");
+  closeModal(newPostModal);
 });
 
 function handleEditProfileSumbit(evt){
   evt.preventDefault();
   profileNameEl.textContent = editProfileNameInput.value;
   profileBioEl.textContent = editProfileDescriptionInput.value;
-  editProfileModal.classList.remove("modal__is-opened");
+  closeModal(editProfileModal);
 };
 
 editProfileForm.addEventListener("submit", handleEditProfileSumbit);
@@ -48,7 +56,7 @@ function handleAddCardSubmit(evt){
   evt.preventDefault();
   console.log(linkInput.value);
   console.log(cardNameInput.value);
-  newPostModal.classList.remove("modal__is-opened");
+  closeModal(newPostModal);
 };
 
-addCardForm.addEventListener("sumbit", handleAddCardSubmit);
+addCardForm.addEventListener("submit", handleAddCardSubmit);
