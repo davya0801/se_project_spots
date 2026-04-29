@@ -1,13 +1,13 @@
 .footer {
-overflow: auto;
-padding: 0 20px 20px;
+  overflow: auto;
+  padding: 0 20px 20px;
 }
 
 .footer__description {
- font-size: 16px;
- line-height: 1;
- text-align: center;
- margin: 60px 0;
- color: #212121;
- opacity: 70%
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+  margin: 60px 0;
+  color: #212121;
+  opacity: 0.7;
 }

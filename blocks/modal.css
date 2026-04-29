@@ -11,9 +11,10 @@
   align-items: center;
   padding: 10px;
   opacity: 0;
-  transition:visibility 0s linear 0.5s, opacity 0.5s linear;
+  transition:
+    visibility 0s linear 0.5s,
+    opacity 0.5s linear;
 }
-
 
 .modal_is-opened {
   visibility: visible;
@@ -44,8 +45,8 @@
   top: 32px;
   right: 50px;
   padding: 0;
-  opacity: .4;
-  transition: opacity .3s ease;
+  opacity: 0.4;
+  transition: opacity 0.3s ease;
   cursor: pointer;
 }
 
@@ -53,7 +54,7 @@
   top: 0;
   right: -52.5px;
   opacity: 1;
- filter: invert(1);
+  filter: invert(1);
 }
 
 .modal__close-btn:hover {
@@ -61,14 +62,14 @@
 }
 
 .modal__close-btn_type_preview:hover {
-opacity: 40%;
+  opacity: 0.4;
 }
 
 .modal__title {
-font-weight: 500;
-font-size: 32px;
-line-height: 100%;
-margin: 0 0 32px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  margin: 0 0 32px;
 }
 
 .modal__form {
@@ -77,10 +78,10 @@ margin: 0 0 32px;
 }
 
 .modal__label {
-font-weight: 500;
-font-size: 16px;
-line-height: 1.1;
-color: #212121B2;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1;
+  color: #212121b2;
 }
 
 .modal__input {
@@ -97,7 +98,7 @@ color: #212121B2;
 }
 
 .modal__input::placeholder {
-  color: #2121214D;
+  color: #2121214d;
 }
 
 .modal__input:hover {
@@ -111,17 +112,17 @@ color: #212121B2;
   border: none;
   padding: 0;
   background-color: #212121;
-  color: #FCF5E5;
+  color: #fcf5e5;
   font-weight: 500;
   font-size: 16px;
   line-height: 100%;
-  opacity: 70%;
-  transition: opacity .3s ease;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
   cursor: pointer;
 }
 
 .modal__save-btn:hover {
-opacity: 1;
+  opacity: 1;
 }
 
 .modal__image-container {
@@ -146,7 +147,7 @@ opacity: 1;
   margin: 8px 0 0;
 }
 
-@media screen and (max-width:627px){
+@media screen and (max-width: 627px) {
   .modal__container {
     padding: 12px;
   }
@@ -156,8 +157,8 @@ opacity: 1;
     right: 12px;
   }
   .modal__title {
-  font-size: 20px;
-  margin: 10px 0 32px;
+    font-size: 20px;
+    margin: 10px 0 32px;
   }
 
   .modal__input {
