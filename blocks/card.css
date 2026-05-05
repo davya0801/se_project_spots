@@ -71,7 +71,7 @@
 }
 
 .card__heart-btn_clicked {
-  background-image: url(../images/likeclicked.png);
+  background-image: url(../images/likeclicked.svg);
   opacity: 1;
 }
 

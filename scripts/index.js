@@ -136,7 +136,7 @@ function handleAddCardSubmit(evt) {
     link: linkInput.value.trim(),
   };
 
-  if (!cardNameInput.value.trim() || !linkInput.value.trim()) return;
+  if (!inputValues.name || !inputValues.link) return;
 
   const cardElement = getCardElement(inputValues);
   cardList.prepend(cardElement);
